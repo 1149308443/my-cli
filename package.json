@@ -1,13 +1,17 @@
 {
-  "name": "my-cli",
+  "name": "me-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "my-cli": "index.js"
+    "me-cli": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1149308443/my-cli.git"
   },
   "author": "wuweixing",
   "license": "ISC",
