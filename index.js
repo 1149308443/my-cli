@@ -8,18 +8,18 @@ program
     .description('查看所有可用的项目模板')
     .action(()=>{
         console.log(`
-            reactCli        react基础模板
-            reactReduxCli   react+redux模板
-            reactMobxCli    react+mobx模板
-            reactTsCli      react+typescript模板
+            react                 react基础模板
+            react-redux           react+redux模板
+            react-Mobx            react+mobx模板
+            react-typescript      react+typescript模板
         `)
     })
 
 program
-    .command('init <template> <project>')
+    .command('init <project>')
     .description('初始化项目模板工程')
-    .action(( templateName, projectName)=>{
-        require('./command/init.js')(templateName, projectName)
+    .action(( projectName)=>{
+        require('./command/init.js')(projectName)
     })
 
 program.parse(process.argv);  // 解析命令行参数
